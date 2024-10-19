@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liburan Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            margin: 0 auto 20px;
+            max-width: 800px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* Memungkinkan gambar untuk mengalir ke baris berikutnya */
+            justify-content: center; /* Menyelaraskan gambar di tengah */
+            gap: 20px; /* Jarak antara gambar */
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            flex: 1 1 150px; /* Membuat gambar responsif dengan lebar minimum 150px */
+            height: auto;
+            max-width: 150px; /* Mengatur batas maksimum lebar gambar untuk tampilan PC */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tambahkan gaya untuk kelas baru */
+        .gallery-of-my-holiday {
+            margin-top: 40px; /* Tambah jarak atas untuk memisahkan dari konten sebelumnya */
+            padding: 20px;
+            background-color: #fff; /* Warna latar belakang putih */
+            border-radius: 10px; /* Sudut melengkung */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+            text-align: center; /* Menyelaraskan teks di tengah */
+        }
+
+        .gallery-title {
+            font-size: 1.8em; /* Ukuran font untuk judul galeri */
+            color: #4b0082; /* Warna lilac */
+            margin-bottom: 20px; /* Jarak bawah judul */
+        }
+
+        /* Animasi Instagram */
+        .instagram {
+            font-size: 1.4em;
+            color: purple;
+            margin-top: 30px;
+            text-align: center;
+            animation: fadeInOut 3s infinite;
+        }
+
+        .instagram .highlight {
+            background: linear-gradient(45deg, #ff007f, #6a0dad);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: shine 5s linear infinite;
+        }
+
+        .instagram a {
+            color: #ff007f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .instagram a:hover {
+            text-decoration: underline;
+        }
+
+        /* Efek gradasi bergerak */
+        @keyframes shine {
+            0% {
+                background-position: -200%;
+            }
+            100% {
+                background-position: 200%;
+            }
+        }
+
+        /* Efek animasi muncul dan hilang */
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .links a {
+            color: #6a0dad;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liburan Saya</h1>
+    
+    <p>
+        Ditulis oleh: <b>Timothy Reinhard Jeremi Pakpahan - 2382010</b>
+    </p>
+    
+    <center>
+        <img src="download.jpeg" alt="Gambar Liburan">
+    </center>
+    
+    <p>
+        Halo, nama saya <b>Timothy Reinhard Jeremi Pakpahan</b>. Selama liburan baru-baru ini, saya menghabiskan sebagian besar waktu saya untuk <i>magang</i>. Saya percaya bahwa mendapatkan pengalaman langsung melalui magang akan sangat berharga untuk karier masa depan saya. Pengalaman ini tidak hanya meningkatkan keterampilan saya, tetapi juga memberi saya wawasan tentang dunia profesional, mempersiapkan saya menghadapi tantangan ke depan.
+    </p>
+    
+    <p>
+        Setelah menyelesaikan magang, saya menghabiskan sisa waktu di rumah dengan melakukan kegiatan yang saya nikmati. Saya menonton berbagai film dan tenggelam dalam <i>membaca ebook dan komik online</i>, seperti <i>manga dan manhwa</i>. Ada begitu banyak cerita menarik hingga saya sering kali membaca komik berjam-jam tanpa menyadari waktu. Kegiatan ini memberi keseimbangan sempurna dengan magang saya, memungkinkan saya untuk bersantai dan bersenang-senang.
+    </p>
+
+    <p>
+        Saya sangat bersyukur kepada para penulis dan pembuat komik ini atas karya mereka yang luar biasa. Cerita-cerita mereka membantu mengisi waktu luang saya, terutama saat merasa bosan atau lelah dengan rutinitas. Kreativitas dan dedikasi mereka membuat liburan saya menjadi lebih menyenangkan.
+    </p>
+
+    <!-- Galeri Gambar dengan kelas baru -->
+    <div class="gallery-of-my-holiday">
+        <div class="gallery-title">Gallery Of MyHoliday</div>
+        <div class="gallery">
+            <img src="553bd936-a73a-436d-b164-eb43991a22ab.jpg" alt="Gambar Liburan 1">
+            <img src="5176ac85-fe3d-4165-8e11-75f4d93f0f1f.jpg" alt="Gambar Liburan 2">
+            <img src="Baca komik.jpg" alt="Gambar Liburan 3">
+            <img src="haikyuu.jpg" alt="Gambar Liburan 4">
+            <img src="Netflix.jpg" alt="Gambar Liburan 5">
+            <img src="spirited away.jpg" alt="Gambar Liburan 6">
+            <img src="ini kucing nya lucu banget😚.jpg" alt="Gambar Liburan 7">
+        </div>
+    </div>
+
+    <div class="instagram">
+        <span class="highlight">Follow My Instagram! <a href="https://www.instagram.com/tim.__.ot/">@tim._.ot</a> :)</span>
+    </div>
+
+    <div class="links">
+        <p><b>Other Page:</b></p>
+        <a href="index.html">Home Page</a> | 
+        <a href="registration.html">Registration Form</a> | 
+        <a href="about.html">About Me</a>
+    </div>
+</body>
+</html>
